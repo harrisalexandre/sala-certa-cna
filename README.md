@@ -6,7 +6,7 @@ Sistema web para organizar a distribuição de turmas, professores e salas da CN
 
 - Cadastro, edição e exclusão de turmas.
 - Organização por andar e sala.
-- Registro de professor, turma/disciplina e quantidade de alunos.
+- Registro de professor, turma/disciplina, quantidade de alunos e horário de início e término da aula.
 - Busca e filtro por andar.
 - Indicadores de turmas, salas ocupadas e alunos.
 - Tela de TV agrupada por andar, com relógio e data.
@@ -48,3 +48,7 @@ Os dados são armazenados no navegador usando `localStorage`. A sincronização 
 ---
 
 Projeto educacional da CNA.
+
+## Identidade visual
+
+Interface com a paleta vermelha da CNA e marca sobre fundo branco.
