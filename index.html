@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-<<<<<<< HEAD
   <head>
-=======
-
-<head>
->>>>>>> a064054 (refatoracao)
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#e30635">
@@ -13,7 +8,6 @@
     <title>Sala Certa CNA | Gerenciamento de Turmas</title>
     <link rel="icon" type="image/svg+xml" href="assets/cna-logo.svg">
     <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
   </head>
   <body>
     <header class="topbar">
@@ -177,114 +171,3 @@
     </script>
   </body>
 </html>
-=======
-</head>
-
-<body>
-    <header class="topbar"><a class="brand" href="#admin" aria-label="Sala Certa CNA"><span
-                class="brand-mark logo-holder"><img src="assets/cna-logo.svg" alt="Logo CNA+"></span><span><strong>Sala
-                    Certa CNA</strong><small>Gestão escolar</small></span></a>
-        <nav class="nav-tabs" aria-label="Navegação principal"><a href="#admin" id="adminLink"
-                class="nav-link active">Gerenciar</a><a href="#tv" id="tvLink" class="nav-link">Tela da TV</a></nav>
-    </header>
-    <main id="adminView" class="page">
-        <section class="page-heading">
-            <div>
-                <p class="eyebrow">ADMINISTRAÇÃO CNA</p>
-                <h1>Distribuição de turmas</h1>
-                <p class="muted">Organize salas, professores, horários e turmas em um só lugar.</p>
-            </div><a class="button button-dark" href="#tv" target="_blank" rel="noopener">↗ Abrir tela da TV</a>
-        </section>
-        <section class="stats" aria-label="Resumo">
-            <article class="stat-card"><span class="stat-icon">▦</span>
-                <div><span class="stat-label">Turmas cadastradas</span><strong id="totalClasses">0</strong></div>
-            </article>
-            <article class="stat-card"><span class="stat-icon">⌂</span>
-                <div><span class="stat-label">Salas ocupadas</span><strong id="totalRooms">0</strong></div>
-            </article>
-            <article class="stat-card"><span class="stat-icon">♙</span>
-                <div><span class="stat-label">Alunos distribuídos</span><strong id="totalStudents">0</strong></div>
-            </article>
-        </section>
-        <section class="content-grid">
-            <article class="panel form-panel">
-                <div class="panel-heading">
-                    <div>
-                        <p class="eyebrow">CADASTRO</p>
-                        <h2 id="formTitle">Adicionar turma</h2>
-                    </div><span class="heading-icon">＋</span>
-                </div>
-                <form id="classForm"><input type="hidden" id="classId">
-                    <label for="floor">Andar</label><select id="floor" required>
-                        <option value="">Selecione o andar</option>
-                        <option>Térreo</option>
-                        <option>1º andar</option>
-                        <option>2º andar</option>
-                        <option>3º andar</option>
-                        <option>4º andar</option>
-                        <option>5º andar</option>
-                        <option>Outro</option>
-                    </select>
-                    <div class="form-row">
-                        <div><label for="room">Sala</label><input id="room" placeholder="Ex.: 05" required
-                                maxlength="20"></div>
-                        <div><label for="students">Nº de alunos</label><input id="students" type="number" min="0"
-                                max="999" value="0" required></div>
-                    </div>
-                    <label for="teacher">Professor(a)</label><input id="teacher" placeholder="Ex.: Alexandre" required
-                        maxlength="80"><label for="className">Turma / disciplina</label><input id="className"
-                        placeholder="Ex.: CT1 ou Inglês Avançado" required maxlength="100">
-                    <label>Horário da aula</label>
-                    <div class="form-row time-row">
-                        <div><label for="startTime">Início</label><input id="startTime" type="time" required></div>
-                        <div><label for="endTime">Término</label><input id="endTime" type="time" required></div>
-                    </div>
-                    <div id="formError" class="form-error" role="alert" hidden></div>
-                    <div class="form-actions"><button type="submit" class="button button-primary" id="saveButton">＋
-                            Salvar turma</button><button type="button" class="button button-quiet" id="cancelEdit"
-                            hidden>Cancelar</button></div>
-                </form>
-                <p class="form-note">As alterações são salvas automaticamente neste navegador.</p>
-            </article>
-            <article class="panel list-panel">
-                <div class="panel-heading list-heading">
-                    <div>
-                        <p class="eyebrow">VISÃO GERAL</p>
-                        <h2>Turmas cadastradas</h2>
-                    </div><span id="listCount" class="count-pill">0 turmas</span>
-                </div>
-                <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput"
-                            type="search" placeholder="Buscar sala, professor ou turma..."
-                            aria-label="Buscar turmas"></label><select id="floorFilter" aria-label="Filtrar por andar">
-                        <option value="">Todos os andares</option>
-                    </select></div>
-                <div id="classList" class="class-list"></div>
-                <div id="emptyState" class="empty-state"><span class="empty-icon">▤</span><strong>Nenhuma turma por
-                        aqui</strong>
-                    <p>Cadastre a primeira turma usando o formulário ao lado.</p>
-                </div>
-            </article>
-        </section>
-        <footer class="page-footer"><span>© Sala Certa CNA</span><span>Dados armazenados neste navegador</span></footer>
-    </main>
-    <main id="tvView" class="tv-view" hidden>
-        <header class="tv-header">
-            <div class="tv-brand">
-                <div>
-                    <p class="eyebrow">CNA · INFORMAÇÃO ESCOLAR</p>
-                    <h1>Quadro de Turmas</h1>
-                </div>
-            </div>
-            <div class="tv-clock"><strong id="clock">--:--</strong><span id="dateLabel">Carregando data…</span></div>
-            <button id="fullscreenButton" class="fullscreen-button" type="button" aria-label="Entrar em tela cheia"
-                title="Tela cheia (Esc para sair)"><span aria-hidden="true">⛶</span></button>
-        </header>
-        <section id="tvContent" class="tv-content"></section>
-        <footer class="tv-footer"><span>Consulte o andar, horário e sala da sua turma</span><span
-                id="tvUpdated">Atualizado agora</span></footer>
-    </main>
-    <script src="app.js"></script>
-</body>
-
-</html>
->>>>>>> a064054 (refatoracao)
