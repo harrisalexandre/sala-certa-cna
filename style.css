@@ -3,3 +3,6 @@
 
 /* Marca CNA e painel de TV claro */
 .logo-holder{width:128px;height:52px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:6px;overflow:hidden;flex-shrink:0}.logo-holder img{display:block;width:100%;height:100%;object-fit:contain}.tv-brand .logo-holder{width:148px;height:62px}@media(max-width:600px){.brand .logo-holder{width:90px;height:42px}.tv-brand .logo-holder{width:92px;height:44px}}
+
+/* Botão discreto para alternar tela cheia no painel da TV */
+.tv-header{position:relative}.fullscreen-button{position:absolute;top:0;right:0;width:34px;height:34px;display:grid;place-items:center;border:1px solid #e3e8ef;border-radius:9px;background:rgba(255,255,255,.92);color:#68758a;font-size:23px;line-height:1;cursor:pointer;opacity:.72;transition:opacity .15s ease,background .15s ease,color .15s ease}.fullscreen-button:hover,.fullscreen-button:focus-visible{opacity:1;background:#fff0f3;color:#c8102e;outline:2px solid #f3c4ce;outline-offset:2px}.tv-clock{padding-right:38px}body:fullscreen .tv-view{min-height:100vh}@media(max-width:600px){.fullscreen-button{width:30px;height:30px;font-size:20px;top:-3px;right:-2px}.tv-clock{padding-right:30px}}
