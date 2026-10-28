@@ -130,7 +130,7 @@ h2 {
   cursor: pointer;
 }
 .button-dark {
-  background: var(--navy);
+  background: var(--blue);
   color: #fff;
 }
 .button-primary {
