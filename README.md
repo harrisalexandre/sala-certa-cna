@@ -52,3 +52,8 @@ Projeto educacional da CNA.
 ## Identidade visual
 
 Interface com a paleta vermelha da CNA e marca sobre fundo branco.
+
+
+## Identidade visual
+
+A marca CNA é exibida sobre fundo branco. A tela de TV usa fundo branco, texto escuro e vermelho como cor de destaque para facilitar a leitura à distância.
