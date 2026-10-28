@@ -32,7 +32,7 @@ Não há dependências para instalar.
 ## Telas
 
 - `index.html#admin` — gerenciamento das turmas.
-- `index.html#tv` — painel para TV.
+- `index.html#tv` — painel para TV (compatibilidade).\n- `/view/` — endereço direto da tela para TV.
 
 ## Armazenamento
 
